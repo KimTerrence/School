@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile | Schedule</title>
+    <style>
+        body{
+            background: #000814;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            background-color: #000814;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            font-size: larger;
+            border-bottom: 1px solid #e0e1dd;
+        }
+        nav ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            align-items: center;
+            justify-content: right;
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: #e0e1dd;
+        }
+        nav ul li a:hover{
+            color: #0d1b2a;
+            height: 100%;
+        }
+        nav ul li a{
+            padding: 10px  20px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover{
+            border-radius: 30px;
+            transition: 0.5s;
+            background-color: #e0e1dd;
+            color: #0d1b2a;
+        }
+       section{
+        color: #e0e1dd;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+       }
+       
+       article{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       article div {
+        display: flex;
+        justify-content: center;
+        width: 80%;
+        padding: 20px;
+        border: 1px solid #e0e1dd;
+        margin-bottom: 20px;
+        border-radius: 20px;
+       }
+       table{
+        background-color: #000814;
+        width: 100%;
+        text-align: center;
+       }
+       table, tr, td, th  {
+        border: 1px solid #50324f;
+        border-collapse: collapse;
+        color: #e0e1dd;
+        animation: bilog 1s;
+       }
+        footer{
+            border-top:1px solid #e0e1dd;
+            height: 50px;
+            width: 100%;
+            background-color: #000814;
+            text-align: center;
+            color: #e0e1dd;
+        }
+        @keyframes bilog {
+            0%{
+            border: 1px dashed #e0e1dd;
+            color: #e0e1dd;
+        }
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a style=" border-radius: 30px; transition: 0.5s; border: 1px solid #e0e1dd;" href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+     <h5>Cagayan State University 
+        <br>College of Information and Computing Sciences
+        <br>Gonzaga Cagayan
+        <br><br>
+        BSIT 2A Class Schedule
+        <br>Second Sem S.Y 2023-2024
+     </h5>
+    </section>
+
+    <article>
+        <div>
+      <table style="color: #e0e1dd;">
+        <tr>
+            <th>Time</th>
+            <th>MON</th>
+            <th>TUE</th>
+            <th>WED</th>
+            <th>THU</th>
+            <th>FRI</th>
+            <th>SAT</th>
+        </tr>
+        <tr>
+            <td>7:00-7:30</td>
+            <td rowspan="4">IT 225 (LEC) <br>Elmarie Suetos</td>
+            <td rowspan="4">IT 224 (LEC) <br> Dorothy Ayuyang</td>
+            <td rowspan="4">IT 223 (LEC) <br>Rhey Jhun Cacao</td>
+            <td></td>
+            <td></td>
+            <td rowspan="4">IT 221 (LEC) <br>Claud Rosete</td>
+        </tr>
+        <tr>
+            <td>7:30-8:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8:00-8:30</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8:30-9:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9:00-9:30</td>
+            <td rowspan="6">IT 225 (LAB)</td>
+            <td rowspan="6">IT 224 (LAB)</td>
+            <td rowspan="6">IT 223 (LAB)</td>
+            <td></td>
+            <td></td>
+            <td rowspan="6">IT 221 (LAB)</td>
+        </tr>
+        <tr>
+            <td>9:30-10:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10:00-10:30</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10:30-11:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:00-11:30</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11:30-12:00</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="7">Noon Break</td>
+        </tr>
+        <tr>
+            <td>1:00-1:30</td>
+            <td></td>
+            <td rowspan="4">IT 222 (LEC) <br>Richard Ayuyang</td>
+            <td></td>
+            <td rowspan="4">PE 14 <br>Jaylord Sentista</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1:30-2:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2:00-2:30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2:30-3:00</td>
+            <td></td>
+            <td></td>
+            <td rowspan="3">IT 226 <br>Dorothy Ayuyang</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3:00-3:30</td>
+            <td rowspan="4">IT 226 <br>Dorothy Ayuyang</td>
+            <td rowspan="6">IT 222 (LEC)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3:30-4:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4:00-4:30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4:30-5:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5:00-5:30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5:30-6:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+      </table>
+    </div>
+    </article>
+
+    <footer>
+        <p>@Quines Kim Terrence BSIT 2A</p>
+    </footer>
+</body>
+</html>

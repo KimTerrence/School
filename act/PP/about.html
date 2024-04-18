@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile | About</title>
+    <style>
+        *{
+            border: 1px so lid;
+        }
+        body{
+            background: #000814;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            background-color: #000814;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            font-size: larger;
+            border-bottom: 1px solid #e0e1dd;
+        }
+        nav ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            align-items: center;
+            justify-content: right;
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: #e0e1dd;
+        }
+        nav ul li a:hover{
+            color: #0d1b2a;
+            height: 100%;
+        }
+        nav ul li a{
+            padding: 10px  20px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover{
+            border-radius: 30px;
+            transition: 0.5s;
+            background-color: #e0e1dd;
+            color: #0d1b2a;
+        }
+       section{
+        height: 40%;
+        color: #e0e1dd;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+       }
+       section img{
+        height: 200px;
+        opacity: 50%;
+        border-radius: 20px;
+        transition: 0.5s;
+       }
+       section img:hover{
+        opacity: 90%;
+        height: 300px;
+        transition: 0.5s;
+        border-radius: 50%;
+       }
+       article{
+        height: 40%;
+        color: #e0e1dd;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+       }
+        footer{
+            border-top:1px solid #e0e1dd;
+            height: 50px;
+            width: 100%;
+            background-color: #000814;
+            text-align: center;
+            color: #e0e1dd;
+        }
+        table{
+            border: 1px solid #50324f;
+            border-radius: 10px;
+            padding: 20px;
+            animation: bilog 1s;
+        }
+        article div p{
+            padding: 20px;
+            border: 1px solid #50324f;
+            border-radius: 10px;
+            width: 100%;
+            animation: bilog 1s;
+        }
+        @keyframes bilog {
+            0%{ padding: 0 }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a style=" border-radius: 30px; transition: 0.5s; border: 1px solid #e0e1dd;" href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <img src="pic.jpg" alt="xaxaaax">
+        <div>
+            <h2 style="text-decoration: underline;">Kim Terrence Quines</h2>
+            <table style="font-size:large ;">
+                <tr>
+                    <td>Age: </td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <td>Program: </td>
+                    <td>Bachelor of Science in Information Technology</td>
+                </tr>
+                <tr>
+                    <td>Year: </td>
+                    <td>1st Year</td>
+                </tr>
+                <tr>
+                    <td>Section: </td>
+                    <td>Android</td>
+                </tr>
+                <tr>
+                    <td>College: </td>
+                    <td>College of Information and Computing Sciences</td>
+                </tr>
+                <tr>
+                    <td>Student ID: </td>
+                    <td>22-30180</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+<hr style="width: 90%;">
+    <article>
+        <div>
+       <h2 style="font-size: xx-large;">Me?</h2>
+       <p style="font-size: x-large;">Im' Kim Terrence Saturno Quines from Santa Teresita Cagayan, 
+        <br> Im second year IT student from Cagayan State University with strong focus in Website Development because 
+        <br> I love creating things in web I aslo love watching anime, kdrama, movies and reading manga when im bored haha.</p>
+    </div>
+    </article>
+
+    <footer>
+        <p>@Quines Kim Terrence BSIT 2A</p>
+    </footer>
+</body>
+</html>

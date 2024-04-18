@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Profile | Contact</title>
+    <style>
+        body{
+            background: #000814;
+            height: 100vh;
+            padding: 0;
+            margin: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        nav{
+            background-color: #000814;
+            width: 100%;
+            height: 70px;
+            display: flex;
+            font-size: larger;
+            border-bottom: 1px solid #e0e1dd;
+        }
+        nav ul{
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            align-items: center;
+            justify-content: right;
+        }
+        nav ul li a{
+           text-decoration: none;
+           color: #e0e1dd;
+        }
+        nav ul li a:hover{
+            color: #0d1b2a;
+            height: 100%;
+        }
+        nav ul li a{
+            padding: 10px  20px;
+            transition: 0.5s;
+        }
+        nav ul li a:hover{
+            border-radius: 30px;
+            transition: 0.5s;
+            background-color: #e0e1dd;
+            color: #0d1b2a;
+        }
+       
+        section{
+            color: #e0e1dd;
+            display: flex;
+            justify-content: center;
+            font-size: x-large;
+            height: 40%;
+            align-items: end;
+        }
+        article{
+            height: 40%;
+            font-size: larger;
+            color: #e0e1dd;
+            display: flex;
+            align-items: start;
+            justify-content: center;
+        }
+        table{
+            width: 400px;
+            border: 1px solid #50324f;
+            padding: 40px;
+            border-radius: 20px;
+            animation: bilog 1s;
+        }
+
+        footer{
+            border-top:1px solid #e0e1dd;
+            height: 50px;
+            width: 100%;
+            text-align: center;
+            background-color: #000814;
+            color: #e0e1dd;
+        }
+        @keyframes bilog {
+            0%{
+                border-radius: 0;
+                padding: 30px;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a style=" border-radius: 30px; transition: 0.5s; border: 1px solid #e0e1dd;" href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+       <h2>Contact Me!</h2>
+    </section>
+
+    <article>
+       <table>
+        <tr>
+            <td>Postal Code: </td>
+            <td>3512</td>
+        </tr>
+        <tr>
+            <td>Address: </td>
+            <td>Santa Teresita Cagayan</td>
+        </tr>
+        <tr>
+            <td>CP number:</td>
+            <td>091239876</td>
+        </tr>
+        <tr>
+            <td>Gmail:</td>
+            <td>quineskimterrence@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Facebook</td>
+            <td><a href="web.facebook.com">Kim Terrence Quines</a></td>
+        </tr>
+       </table>
+    </article>
+
+    <footer>
+        <p>@Quines Kim Terrence BSIT 2A</p>
+    </footer>
+</body>
+</html>
