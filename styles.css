@@ -1,26 +1,71 @@
-.{
-    color: #01161e;
-    color: #eff6e0;
-    color: #aec3b0;
-    color: #598392;
-    color: #124559;
-}
 
 *{
     scroll-behavior: smooth;
     font-family: 'Courier New', Courier, monospace;
     padding: 0;
     margin: 0;
+    border: 1px soid;
 }
 body{
-    background-color: #aec3b0;
+    background-color: #023047;
+    color: #01161e;
+    width: 100%;
+}
+.body_container {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    color: #01161e;
+    width: 83%;
+    position: absolute;
+    left: 17%;
+    margin-top: 20px;
     gap: 20px;
-    width: 100%;
+}
+footer{
+    height: 50px;
+    background-color: #01161e;
+    width: 95%;
+    border-radius: 50px;
+    margin-bottom: 10px;
+}
+nav{
+    width: 15%;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    height: 93vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10px ;
+    margin-top: 20px;
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    list-style: none;
+    overflow: auto;
+    scrollbar-width: none;
+}
+nav ul li {
+    border: 1px solid #eff6e0;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 50px;
+}
+nav > ul > li > a{
+    text-decoration: none;
+    color: #eff6e0;
+    
+}
+nav > ul > a{
+    text-decoration: none;
+    color: #eff6e0;
+    height: 5%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: x-large;
 }
 /*----------------Section------------------,*/
 section{
@@ -32,32 +77,37 @@ section{
 .container{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    padding: 20px 0 0 0;
 }
 .photo_container{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 100%;
 }
 .photo_card img{
-    height: 250px;
-    width: 400px;
+    height: 300px;
+    width: 90%;
     background-color: #01161e;
     border-radius: 20px;
-    border: 1px solid #124559;
     transition: 0.5s;
-    opacity: 80%;
-    
 }
-.photo_card img:hover{
+.photo_card img:hove{
     height: 255px;
-    width: 405px;
+    width: 400px;
     opacity: 100%;
 }
 .photo_card{
     text-align: center;
     height: 100%;
-    width: 400px;
+    width: 100% ;
+    display: flex; 
+    flex-direction: column ;     
+    justify-content:space-around;    
+    align-items: center;
+    padding: 20 0 0px ;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ;
+}
+.photo_card div {
 }
 .photo_card a{
     padding: 10px 20px 10px 20px;
@@ -73,6 +123,12 @@ section{
 }
 .title {
     font-weight: bold;
+}
+.sub_title{
+    overflow: auto;
+    height: 50px;
+    width: 100%;
+    scrollbar-width: none;
 }
 /*---------------Home section--------------*/
 #home_section {
@@ -137,6 +193,15 @@ section{
     text-decoration: underline;
     color: #124559;
 }
+footer  {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eff6e0;
+}
+footer a{
+    color: #eff6e0;
+}
 /*--------------------Media Query-----------------------*/
 @media screen and (max-device-width: 480px) 
     and (orientation: portrait) {
@@ -145,6 +210,18 @@ section{
             display: flex;
             align-items: center;
             justify-content: center;
+            width: 100%;
+        }
+        .body_container {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width:100%;
+            left: 5%;
+        }
+        nav{
+            position: fixed;
+            width: 100%;
         }
         
         #home_section h1 {
